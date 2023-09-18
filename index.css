@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Lato&display=swap');
+
+
+ul li{
+    margin-right: 50px;
+    
+}
+
+.heading{
+    font-size: 80px;
+    line-height: 100px;
+}
+
+.memory{
+    background-color: black;
+    position: relative; 
+    font-family: "cardo";
+}
+.hero{
+    position: relative; 
+    font-family: "cardo";
+    
+    
+}
+
+.scribble3{
+    position: relative;
+    
+    
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+     background: transparent; 
+    mix-blend-mode: color-burn; 
+    pointer-events: none; 
+    
+}
+
+
+
+.hero::before{
+    background-image: url("/scribble1.png");
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.memory::before {
+    content: "";
+    position: absolute;
+    /* top: 250px; */
+    left: 0px;
+    width: 100%;
+    color: white;
+    height: 100%;
+     background: transparent; 
+
+   
+    
+}
+
+
+
+.memory::before{
+    background-image: url("/scribble2.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+    /* z-index: -1; */
+}
+
+
+
+.break{
+    
+    width: 40px;
+    background-color: black;
+    background-blend-mode: darken;
+    height: 5px;
+}
+
+
+.choose-place{
+    background-color: black;
+}
+
+.card-img-top{
+    font-size: 100px;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+a li{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+/* media Queries */
+
+@media only screen and (max-width: 428px) {
+   .mountain{
+        
+        height: 400px;
+        
+   }
+
+   .memory::before{
+    background-image: none;
+}
+  } 
